@@ -1,0 +1,168 @@
+
+body{
+  display: block;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background: #a7cfdf; /* Old browsers */
+  background: -moz-linear-gradient(top, #a7cfdf 0%, #23538a 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #a7cfdf 0%,#23538a 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #a7cfdf 0%,#23538a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7cfdf', endColorstr='#23538a',GradientType=0 ); /* IE6-9 */
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    width: 300px;
+}
+.back{
+  background: midnightblue;
+  color: white;
+}
+a:hover, a:focus{
+  color: white;
+}
+
+.container{
+  margin-top: 50px;
+}
+
+.intro{
+  margin: 40px auto;
+
+}
+.intro img{
+  max-width: 390px;
+  position: relative;
+  z-index: 1;
+}
+
+.intro .slideInRight{
+  animation-delay: 1000ms;
+  -webkit-animation-delay: 1000ms;
+}
+.boxes{
+  position: absolute;
+  top: 4%;
+  left: 50%;
+  height: 200px;
+  -webkit-animation-delay: 1000ms;
+}
+.box{
+  width: 20px;
+  height: 20px;
+  background: #8a6d3b;
+  position: relative;
+  top: 148px;
+  -webkit-animation-name: moving-box;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+  -moz-animation-name: moving-box;
+  -moz-animation-duration: 3s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-delay: 2s;
+  animation-name: moving-box;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  visibility: hidden;
+
+}
+
+@-webkit-keyframes moving-box {
+  0% {
+    left: 80px;
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    left: -70px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@-moz-keyframes moving-box {
+  0% {
+    left: 80px;
+    opacity: 0;
+    visibility: visible;
+  }
+
+  100% {
+    left: -70px;
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.share{
+  margin-top: 20px;
+  text-align: center;
+}
+.share .btn{
+  box-shadow: 0 16px 46px -16px black;
+}
+
+.content{
+  padding: 20px;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+
+}
+h1{
+  text-align: center;
+}
+
+.it-moving-form{
+  max-width: 700px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: midnightblue;
+  color: white;
+  text-align: center;
+  box-shadow: 0 40px 60px -20px black;
+}
+
+
+.alert {
+  color: red;
+  display: none;
+}
+form input[type=text], select{
+  color: black;
+}
+
+label{
+  min-height: 42px;
+}
+.form-group{
+  margin-bottom: 0;
+}
+
+#price {
+  color: green;
+  font-weight: bold;
+  font-size: 30px;
+}
+#error{
+  color:red;
+}
+
+
+@media only screen and (max-width: 425px) {
+  .intro-img img{
+    max-width: 250px;
+  }
+  .boxes{
+    position: absolute;
+    top: -39px;
+    left: 50%;
+    height: 50px;
+    -webkit-animation-delay: 1000ms;
+}
